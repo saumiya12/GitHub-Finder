@@ -1,68 +1,63 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Github Finder
 
-## Available Scripts
+This is a React app to search Github profiles.
 
-In the project directory, you can run:
+### Steps to Run the Project to IDE:
+1. In the Github repo Click on Code -> Clone -> Using https: `<copy the link>`
+2. Open Terminal
+3. Go to Directory you want to clone the Project
+4. git clone `<paste the link copied at Step1>`
+5. Go to Visual Studio Code or any IDE
+6. Open or Import Project and browse the folder
+7. Run the following commands to launch the project:  
 
-### `npm start`
+`npm install`  
+`npm start`  
+Runs the app in the development mode.  
+Open http://localhost:3000  
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm run build`  
+Builds the app for production to the build folder.  
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
 
-### `npm test`
+### React:
+Known as a spar framework or single page application framework.
+Ie. everything is routed through a single file ie. index
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Prepare and Deploy to Netify:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Netlify builds, deploys and hosts your front-end.
+A powerful serverless platform with an intuitive git-based workflow
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`sudo npm i -g netlify-cli`
 
-### `npm run eject`
+`netlify.toml`  
+[build]  
+publish = "build"   
+when we run it creates a build folder that is a production build
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+`netlify init`
+-	Give a unique name for site
+-	Now project is initialized
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Now go to netlify site -> open project  -> Deploy -> Deploy settings -> Environment -> edit variables
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+We have environment variables on server
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`npm run build`  
+build folder is generated
 
-## Learn More
+`netlify deploy –prod`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Application deployed to Netify:
+https://github-finder-1342423534.netlify.app
 
-### Code Splitting
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### Overview of application
 
-### Analyzing the Bundle Size
+![](./screenshots/mainpage.png)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+![](./screenshots/finderpage.png)
